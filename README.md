@@ -10,12 +10,6 @@ New-Item -ItemType Directory -Force .\build | Out-Null
 gcc -Os -s -mwindows .\src\*.c -o .\build\game.exe
 ```
 
-GCC가 현재 창의 PATH에 아직 반영되지 않았다면:
-
-```powershell
-$env:Path='C:\Users\king2\AppData\Local\Programs\WinLibs\mingw64\bin;' + $env:Path
-```
-
 ## 실행과 조작
 
 ```powershell
